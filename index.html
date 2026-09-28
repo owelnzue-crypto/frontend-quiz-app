@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+<body>
+
+  <header class="app-header">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+    <img id="theme-icon" src="./assets/images/icon-moon-dark.svg" alt="">
+    </button>
+  </header>
+
+  <main id="app">
+
+    <!-- Écran 1 : sélection du sujet -->
+    <section id="menu-screen" class="screen">
+      <h1>Welcome to the<br><strong>Frontend Quiz!</strong></h1>
+      <p>Pick a subject to get started.</p>
+      <div id="subject-list" class="subject-list"></div>
+    </section>
+
+    <!-- Écran 2 : question -->
+    <section id="quiz-screen" class="screen hidden">
+      <div class="quiz-header">
+        <img id="quiz-icon" src="" alt="" class="quiz-icon">
+        <h2 id="quiz-title"></h2>
+      </div>
+      <p id="question-counter" class="question-counter"></p>
+      <h3 id="question-text" class="question-text"></h3>
+      <div id="options-list" class="options-list"></div>
+      <p id="error-message" class="error-message hidden">Please select an answer</p>
+      <button id="submit-btn" class="btn" disabled>Submit Answer</button>
+      <button id="next-btn" class="btn hidden">Next Question</button>
+    </section>
+
+    <!-- Écran 3 : résultat -->
+    <section id="result-screen" class="screen hidden">
+      <div class="quiz-header">
+        <img id="result-icon" src="" alt="" class="quiz-icon">
+        <h2>Quiz completed</h2>
+      </div>
+      <p>You scored...</p>
+      <p id="score-display" class="score-display"></p>
+      <button id="play-again-btn" class="btn">Play Again</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
